@@ -26,7 +26,7 @@ All three survive the forth and fifth battle.
 And by distributing exp like this, Locke gains 540 exp, Char1 gains 308 exp and Char2 gains 1004 exp.
 
 ## IAF_RNG.xlsx
-This is a table to help you partially manipulate the IAF sequence. It should work on most versions (SNES/GBA/Android/IOS/Steam).
+This is a file to help you partially manipulate the IAF sequence. It should work on most versions (SNES/GBA/Android/IOS/Steam).
 
 1. Choose your desired number of 1SF1SA formations (#) and switch to that table named “1SF1SA X #”.
 2. Fly to Triangle Island. Do not walk into the forest. You want to clear your step counter and danger counter first. Walk around in the plain until you encounter some enemies.
