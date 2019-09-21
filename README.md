@@ -36,3 +36,6 @@ This is a table to help you partially manipulate the IAF sequence. It should wor
 6. Now look at the table. Filter the Encounter_1 column by the first step count you just got. If it results in only one row, you’re done. If it results in multiple rows, repeat step 5 & 6 to get your second (and even third) step count until you filter the Encounter_# columns and get only one row. This row’s Random_Seed is your current random seed.
 7. Look at the Extra_Encounters column. This is the number of encounters you are away from the desired formations of IAF which is indicated in F1~F6 columns (F# means the #th battle; Value 1 represents 1SF1SA formation and value 0 represents 1SF2SA formation). Walk around and meet exactly Extra_Encounters groups of enemies. If Extra_Encounters is large, you may want to choose another random seed. Just reload the save and start from step (4) again.
 8. Now board the airship. Congratulations. If you fly to the Floating Continent now, you will meet exactly those formations from columns F1~F6 in IAF sequence.
+
+## iaf_exp_tables.RData
+These tables have the same format as the mine cart ride tables. Since each exp table has 117,649 rows, it's not possible to put them in a excel file, so I save them as R data. You need to know a bit of R language to use them.
