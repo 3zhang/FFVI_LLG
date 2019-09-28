@@ -39,3 +39,18 @@ This is a file to help you partially manipulate the IAF sequence. It should work
 
 ## iaf_exp_tables.RData
 These tables have the same format as the mine cart ride tables. Since each exp table has 117,649 rows, it's not possible to put them in a excel file, so I save them as R data. You need to know a bit of R language to use them.
+
+## veldt_table.xlsx
+This table can be used to manipulate the Veldt formation and quickly find out your desired formation. It should be applicable to most of the versions. Please inform me if you encounter any problem.
+You need to have some basic understanding of the mechanism behind the Veldt. If no, read this first:
+http://www.rpglegion.com/ff6/algs/veldt.htm
+For GBA/Android/IOS/Steam version, use this Veldt formation list instead:
+https://gamefaqs.gamespot.com/boards/930370-final-fantasy-vi-advance/51923197
+ 
+1. Fly to the Veldt. You need to reset the danger counter and step counter first. Walk around to encounter an enemy formation. After the battle, don't move. Save the game to a slot and go back to the title page.
+2. Reload the slot you just saved. Open the menu page and write down the total number of steps. Now walk around to encounter you first enemy formation. You don’t want this enemy formation to be too far from your desired enemy formation. For example, if your target formation is from pack 54 and your current formation is from pack 1, then you need to go through ~50 battles to reach pack 54, which is too far. If that is your case, simply reload your save to change your random seed and your initial Veldt pack.
+3. After your first battle, don’t move. Open menu page and write down your total number of steps again. Subtract this number by your last total number of steps to get your first step count. Filter Encounter_1 column by this number.
+4. If the filtration results in only one row, you’re done. Otherwise, walk around to encounter your second enemy formation. Then repeat step 3 to get your second step count. Filter Encounter_2 column by this number. Check whether there is only one row now. If still not, you need to get your third step count. You should get only one row this time.
+5. After you find out your current random seed, your future Veldt formations are also predictable. For example, if your next Veldt pack is 14 and column F1 is 3, you will encounter a single Harvester formation in your next battle. Similarly, If column F2 is 5, you will encounter Magna Roader (purple) and Magna Roader (red) formation in your second battle.
+6. When the predicted formation is not what you want, you can skip that formation by encountering one or more enemy groups outside of the Veldt. For example, if your next formation number is 3 in column F3, but you want to meet formation 5 in that pack, which is in column F5, then you can play two battles outside of the Veldt, and then return to the Veldt to encounter your desired formation. In this way, you can determine which formation you will encounter in your next enemy pack.
+7. Note that sometimes the formation number points to an empty formation slot. Then the algorithm will skip that formation number and choose the next available formation number in this pack. Available means that the corresponding formation slot is not empty and the formation has been unlocked (you have encountered that formation before).
