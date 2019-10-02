@@ -54,3 +54,8 @@ https://gamefaqs.gamespot.com/boards/930370-final-fantasy-vi-advance/51923197
 5. After you find out your current random seed, your future Veldt formations are also predictable. For example, if your next Veldt pack is 14 and column F1 is 3, you will encounter a single Harvester formation in your next battle. Similarly, If column F2 is 5, you will encounter Magna Roader (purple) and Magna Roader (red) formation in your second battle.
 6. When the predicted formation is not what you want, you can skip that formation by encountering one or more enemy groups outside of the Veldt. For example, if your next formation number is 3 in column F3, but you want to meet formation 5 in that pack, which is in column F5, then you can play two battles outside of the Veldt, and then return to the Veldt to encounter your desired formation. In this way, you can determine which formation you will encounter in your next enemy pack.
 7. Note that sometimes the formation number points to an empty formation slot. Then the algorithm will skip that formation number and choose the next available formation number in this pack. Available means that the corresponding formation slot is not empty and the formation has been unlocked (you have encountered that formation before).
+
+## rage_tb.xlsx
+This is the master rage table. You can see this table in Gau's abilities page (rage tab). Your table is based on the rages you have collected, so by comparing this table with yours, you can find out which rages you are missing.
+Green: Rage you can collect in WoB.
+Yellow: Rage you can only collect in WoR.
